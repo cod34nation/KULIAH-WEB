@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>::Fungsi::</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    function kali() {
+      c = a*b;
+      return c;
+
+    }
+
+    function bagi(x,y) {
+      z= x/y;
+      return z;
+    }
+   var a = 3;
+   var b =6;
+   document.write('Hasil dari ',a,' * ',b,'= ',kali() );
+   document.write('<br />');
+   document.write('Hasil dari ',b,'/','a','=',bagi(a,b));
+
+
+   function hitungGenap(a) {
+
+     var i = 0;
+     var jumlah=0;
+     for (i;i<a;i++){
+
+       if((i%2)==0){
+       jumlah+=i;
+
+     }
+
+     }
+     return jumlah;
+
+   }
+   var jumlah = prompt('Masukkan banyaknya range ', ' ');
+   var range = parseInt(jumlah);
+    document.write('<br />');
+   document.write('total jumlah Bilangan genap range 0- ',range,'=',hitungGenap(range));
+
+
+
+    </script>
+  </body>
+</html>

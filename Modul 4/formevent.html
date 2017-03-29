@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>::Event Click::</title>
+    <script type="text/javascript">
+      function calc(form) {
+        a = form.a.value/100;
+        b= a * form.b.value;
+        form.totall.value=b;
+      }
+    </script>
+  </head>
+  <body>
+<form name="form">
+  Presentase : <input type="text" name="a" size = 5><br />
+  angka di presentase :<input type="text" name="b" size=5 ><br />
+  <input type="button"  value="Calculate" onClick="calc(this.form)">
+</br>
+<input type="text" name="totall" maxlength=40>
+</form>
+  </body>
+</html>

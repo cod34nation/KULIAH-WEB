@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>::Check Box</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    function checkAll(field) {
+      for(var i =0;i<field.length;i++) {field[i].checked =true;}
+    }
+
+      function uncheckAll(field) {
+
+        for (var i = 0; i < field.length; i++) {
+          field[i].checked = false;
+        }
+
+      }
+
+
+    </script>
+    <form name="formnya">
+      <input type="button" name="chekAll" value="check All" onclick="checkAll(document.formnya.buah)">
+      <input type="button" name="unchekAll" value="uncheck All" onclick="uncheckAll(document.formnya.buah)">
+      <input type="checkbox" name="buah"  />Manggis<br>
+      <input type="checkbox" name="buah"  />Apel<br>
+<input type="checkbox" name="buah"  />Jeruk<br>
+<input type="checkbox" name="buah"  />Pear<br>
+<input type="checkbox" name="buah"  />Anggur
+    </form>
+  </body>
+</html>
