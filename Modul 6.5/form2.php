@@ -30,7 +30,7 @@ $baris = $_POST['baris'];
       for($i=1;$i<=$baris;$i++){
         if($i%2==0){
           $hasil.="<tr>";
-            
+
             for($j=1;$j<=$kolom;$j++){
               if(($j+1)%4==0 || ($j)%4==0){
                 $hasil.="<td> $i"." $j</td>";
@@ -47,7 +47,7 @@ $baris = $_POST['baris'];
 
         else if($i%2==1){
           $hasil.="<tr>";
-            
+
             for($j=1;$j<=$kolom;$j++){
               if(($j+1)%4==0 || ($j)%4==0){
                 $hasil.="<td bgcolor=red> $i"." $j</td>";
@@ -61,7 +61,7 @@ $baris = $_POST['baris'];
           $hasil.="</tr>";
         }
       }
-  
+
   $hasil.="</table>";
   echo $hasil;
 

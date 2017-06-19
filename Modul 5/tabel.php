@@ -10,6 +10,5 @@
       <input type="text" name="kolom" placeholder="kolom">
       <button type="submit" value="Klik">Klik</button>
     </form>
-
   </body>
 </html>
